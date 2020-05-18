@@ -8,6 +8,7 @@ package prg.vereinverwaltung.domain;
  */
 public class Kontakt {
 	
+	/* Test komment */ 
 	private String name;
 	private String vorname;
 	private String telefon;
