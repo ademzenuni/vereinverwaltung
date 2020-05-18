@@ -7,11 +7,12 @@ package prg.vereinverwaltung.domain;
  * @version 1.0
  */
 public class Kontakt {
-
-	private String telefon;
-	private String email;
+	
 	private String name;
 	private String vorname;
+	private String telefon;
+	private String email;
+
 	
 	public Kontakt(String telefon, String email, String name, String vorname) {
 		this.telefon=telefon;

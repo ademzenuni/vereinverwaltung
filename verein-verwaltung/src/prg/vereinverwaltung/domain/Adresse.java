@@ -18,7 +18,7 @@ public class Adresse {
 		this.plz=plz;
 		this.strasse=strasse;
 		this.ort=ort;
-		this.setLand(land);
+		this.land=land;
 	}
 
 	public int getPlz() {
