@@ -4,7 +4,7 @@ package prg.vereinverwaltung.domain;
  * Diese Klasse bildet die Kontaktdaten ab.
  * 
  * @author jsucur
- * @version 1.0
+ * @version 1.0a
  */
 public class Kontakt {
 	
