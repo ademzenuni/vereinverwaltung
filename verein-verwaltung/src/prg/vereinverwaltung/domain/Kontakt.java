@@ -3,7 +3,7 @@ package prg.vereinverwaltung.domain;
 /**
  * Diese Klasse bildet die Kontaktdaten ab.
  * 
- * @author jsucur
+ * @author azenuni
  * @version 1.0
  */
 

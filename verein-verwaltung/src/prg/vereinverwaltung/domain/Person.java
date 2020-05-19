@@ -3,7 +3,7 @@ import java.util.Date;
 /**
  * Diese Klasse bildet eine Person ab.
  * 
- * @author jsucur
+ * @author azenuni
  * @version 1.0
  */
 public class Person {
