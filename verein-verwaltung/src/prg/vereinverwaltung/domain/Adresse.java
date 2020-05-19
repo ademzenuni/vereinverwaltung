@@ -3,7 +3,7 @@ package prg.vereinverwaltung.domain;
 /**
  * Diese Klasse bildet eine Adresse ab.
  * 
- * @author jsucur
+ * @author azenuni
  * @version 1.0
  *
  */
