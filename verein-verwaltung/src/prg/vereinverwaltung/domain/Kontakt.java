@@ -4,7 +4,7 @@ package prg.vereinverwaltung.domain;
  * Diese Klasse bildet die Kontaktdaten ab.
  * 
  * @author jsucur
- * @version 1.0a
+ * @version 1.0
  */
 public class Kontakt {
 	
@@ -18,8 +18,8 @@ public class Kontakt {
 	public Kontakt(String telefon, String email, String name, String vorname) {
 		this.telefon=telefon;
 		this.email=email;
-		this.setName(name);
-		this.setVorname(vorname);
+		this.name=name;
+		this.vorname=vorname;
 	}
 
 	public String getTelefon() {
