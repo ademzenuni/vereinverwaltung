@@ -11,18 +11,17 @@ public class Person {
 	private String vorname;
 	private String name;
 	private Date geburtsdatum; 
-	
-	private Kontakt Kontakt;
-	private Adresse Adresse;
+	private Kontakt kontakt;
+	private Adresse adresse;
 	
 	
 	public Person(String vorname, String name, Date geburtsdatum, int plz, String strasse, String ort, String land, int telefon, String email){
 		this.vorname=vorname;
 		this.name=name;
 		this.geburtsdatum=geburtsdatum;
-		
-		this.Kontakt = new Kontakt(telefon, email);
-		this.Adresse = new Adresse(plz, strasse, ort,land);
+	
+		this.kontakt = new Kontakt(telefon, email);
+		this.adresse = new Adresse(plz, strasse, ort,land);
 		
 	}
 	
@@ -48,5 +47,21 @@ public class Person {
 	
 	public Date getGeburtsdatum() {
 		return geburtsdatum;
+	}
+	
+	public Kontakt getKontakt() {
+		return kontakt;
+	}
+
+	public void setKontakt(Kontakt kontakt) {
+		this.kontakt = kontakt;
+	}
+	
+	public Adresse getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(Adresse adresse) {
+		this.adresse = adresse;
 	}
 }
