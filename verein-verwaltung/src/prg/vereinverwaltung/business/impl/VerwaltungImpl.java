@@ -31,7 +31,7 @@ public class VerwaltungImpl implements Verwaltung {
 	 * vereinverwaltung.domain.Person)
 	 */
 	@Override
-	public Person personHinzuguefen(Person person) throws Exception {
+	public Person personHinzufuegen(Person person) throws Exception {
 		// TODO Auto-generated method stub
 		return null;
 	}

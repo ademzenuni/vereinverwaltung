@@ -20,7 +20,7 @@ public interface Verwaltung {
 	 * @return
 	 * @throws Exception
 	 */
-	Person personHinzuguefen(Person person) throws Exception;
+	Person personHinzufuegen(Person person) throws Exception;
 
 	/**
 	 * Diese Methode aktualisiert die übergebene Person.
