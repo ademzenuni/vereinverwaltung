@@ -141,6 +141,38 @@ public class UI {
 		
 	}
 
+	private void auswahlMenu2_1_1() {
+		int wahl = 0;
+		
+		menu = MENU_2_1_1;
+		System.out.println(menu);
+		
+		
+		wahl = eingabeEinlesen();
+		
+		switch (wahl) {
+		case 1:
+			//Mitglied editieren TODO
+			auswahlMenu2_1_0();
+			break;
+		case 2:
+			//Mitglied lieschen TODO
+			auswahlMenu2_1_0();
+			break;
+		case 3:
+			auswahlMenu2_1_0();
+			break;
+		default:
+			System.out.println("Ihre wahl ist ungültig.");
+			auswahlMenu2_1_1();
+			break;
+		}
+		
+		
+		
+		
+	}
+
 	private void auswahlMenu2_1_2() {
 		int wahl = 0;
 		
@@ -175,39 +207,9 @@ public class UI {
 		}
 	}
 
-	private void auswahlMenu2_1_1() {
-		int wahl = 0;
-		
-		menu = MENU_2_1_1;
-		System.out.println(menu);
-		
-		
-		wahl = eingabeEinlesen();
-		
-		switch (wahl) {
-		case 1:
-			//Mitglied editieren TODO
-			auswahlMenu2_1_0();
-			break;
-		case 2:
-			//Mitglied lieschen TODO
-			auswahlMenu2_1_0();
-			break;
-		case 3:
-			auswahlMenu2_1_0();
-			break;
-		default:
-			System.out.println("Ihre wahl ist ungültig.");
-			auswahlMenu2_1_1();
-			break;
-		}
-		
-		
-		
-		
-	}
 
-	private void personHinzufuegen() {
+	private void personHinzufuegen(){
+		try {
 		System.out.println("Geben Sie den Vornamen ein: ");
 		Scanner vorname = new Scanner(System.in);
 		String Vorname = vorname.nextLine();
@@ -254,8 +256,26 @@ public class UI {
 		Scanner email = new Scanner(System.in);
 		String Email = email.nextLine();
 
+		//Person erzeugen
+
 		Person person = new Person(Vorname, Name, Geburtsdatum, PLZ, Strasse, Ort, Land, Telefon, Email);
-	
+
+		//Person speichern
+
+
+		Person pers = verwaltung.personHinzufuegen(person);
+			
+		//Ungleich-Operator != Der Ungleichheits-Operator f�hrt einen Vergleich zweier Operanden aus. Wenn sich die beiden Operanden unterscheiden, 
+		//so gibt der Operator den boolschen Wert true zur�ck, ansonsten false 
+			if (pers != null) {
+				System.out.println("\nPerson erfolgreich hinzugefuegt!");
+			} else {
+				System.err.println("\nPerson konnte nicht hinzugefuegt werden!");
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private static int eingabeEinlesen() {

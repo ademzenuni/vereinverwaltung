@@ -2,6 +2,9 @@ package prg.vereinverwaltung.business.impl;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import prg.vereinverwaltung.business.api.Verwaltung;
 import prg.vereinverwaltung.domain.Person;
 import prg.vereinverwaltung.persister.api.Persister;
@@ -14,6 +17,9 @@ import prg.vereinverwaltung.persister.api.Persister;
  * @version 1.0
  */
 public class VerwaltungImpl implements Verwaltung {
+	
+	//Eigener Code 
+		private static Logger logger = LogManager.getLogger(VerwaltungImpl.class);
 
 	/**
 	 * Persister-Komponente
@@ -32,8 +38,12 @@ public class VerwaltungImpl implements Verwaltung {
 	 */
 	@Override
 	public Person personHinzufuegen(Person person) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		//Eigener Code
+		//Person wird durch speichern in PersisterImpl abgespeichert
+		//Erstellen des Logeintrags
+		Person newPerson = persister.speichern(person);
+		logger.info("PERSON HINZUGEFUEGT: " + newPerson.toString());
+		return newPerson;
 	}
 
 	/*

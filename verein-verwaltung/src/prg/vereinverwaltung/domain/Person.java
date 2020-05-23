@@ -7,12 +7,13 @@ import java.util.Date;
  * @version 1.0
  */
 public class Person {
-
+	private int personenNummer;
 	private String vorname;
 	private String name;
 	private Date geburtsdatum; 
 	private Kontakt kontakt;
 	private Adresse adresse;
+	
 	
 	
 	public Person(String vorname, String name, Date geburtsdatum, int plz, String strasse, String ort, String land, int telefon, String email){
@@ -23,6 +24,14 @@ public class Person {
 		this.kontakt = new Kontakt(telefon, email);
 		this.adresse = new Adresse(plz, strasse, ort,land);
 		
+	}
+	
+	public int getPersonenNummer() {
+		return personenNummer;
+	}
+	
+	public void setPersonenNummer(int personenNummer) {
+		this.personenNummer = personenNummer;
 	}
 	
 	public void setVorname(String vorname) {
@@ -64,4 +73,17 @@ public class Person {
 	public void setAdresse(Adresse adresse) {
 		this.adresse = adresse;
 	}
+	
+	
+	
+	@Override
+	//Ueberschreiben der Methode um besser loggen zu koennen
+	//Wenn direkt aufgerufen falsche Ausgabe 
+	//Hier toString
+	public String toString() {
+		return "Name: " + name + ", Vorname: " + vorname + ", Geburtstag: " + geburtsdatum + 
+				", Kontakt: " + kontakt + ", Adresse=" + adresse;
+	}
+	
+	
 }
