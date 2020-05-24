@@ -29,11 +29,11 @@ public class UI {
 	private static Logger logger = LogManager.getLogger(UI.class);
 
 	/* Menu Strings die in jedem einzelnen Menu ausgegeben werden */
-	private static final String MENU_1_0_0 = "___________________________________________________________\nMitglied hinzufuegen [1]     Daten Laden [2]     Beenden [3]";
-	private static final String MENU_2_0_0 = "___________________________________________________________\nMitglied hinzufuegen [1]     Daten Anzeigen [2]     Zurueck [3]";
-	private static final String MENU_2_1_0 = "___________________________________________________________\nMitglied-Nr [1]     Name und Vorname [2]     Alle [3]   Zurueck [4]";
-	private static final String MENU_2_1_1 = "___________________________________________________________\nMitglied editieren [1]     Mitglied Loeschen [2]     Zurueck [3]";
-	private static final String MENU_2_1_2 = "___________________________________________________________\nMitglied-Nr [1]     Name und Vorname [2]     Exportieren [3] Zurueck [4]";
+	private static final String MENU_1_0_0 = "___________________________________________________________\nMitglied hinzufuegen [1]\nDaten Laden [2]\n\nBeenden [3]";
+	private static final String MENU_2_0_0 = "___________________________________________________________\nMitglied hinzufuegen [1]\nDaten Anzeigen [2]\n\nZurueck [3]";
+	private static final String MENU_2_1_0 = "___________________________________________________________\nSuchkriterium waehlen:\nMitglied-Nr [1]\nName und Vorname [2]\nAlle [3]\n\nZurueck [4]";
+	private static final String MENU_2_1_1 = "___________________________________________________________\nMitglied editieren [1]\nMitglied Loeschen [2]\n\nZurueck [3]";
+	private static final String MENU_2_1_2 = "___________________________________________________________\nSortieren nach:\nMitglied-Nr [1]\nName und Vorname [2]\nExportieren [3]\n\nZurueck [4]";
 
 	// Eine personListe erstellen mit Personen - Speicher für geladene Daten
 	private List<Person> personListe = new ArrayList<>();
@@ -114,7 +114,6 @@ public class UI {
 	private void auswahlMenu2_1_0() throws Exception {
 		int wahl = 0;
 
-		System.out.println("\nSuchkriterium waehlen: ");
 		menu = MENU_2_1_0;
 		System.out.println(menu);
 
@@ -194,7 +193,6 @@ public class UI {
 	private void auswahlMenu2_1_2() throws Exception {
 		int wahl = 0;
 
-		System.out.println("Sortieren nach: ");
 		menu = MENU_2_1_2;
 		System.out.println(menu);
 
