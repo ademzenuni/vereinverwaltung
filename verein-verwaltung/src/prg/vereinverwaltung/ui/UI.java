@@ -228,10 +228,12 @@ public class UI {
 		Scanner name = new Scanner(System.in);
 		String Name = name.nextLine();
 		person.setName(Name);
+		
 			
 		System.out.println("Geben Sie den Vornamen ein: ");
 		Scanner vorname = new Scanner(System.in);
 		String Vorname = vorname.nextLine();
+		person.setVorname(Vorname);
 
 
 		System.out.println("Geben Sie das Geburtsdatum ein (YYYY-MM-DD): ");
@@ -241,32 +243,38 @@ public class UI {
 		LocalDate Geburtsdatum = null;
 		String line = geburtsdatum.nextLine();
 		Geburtsdatum = LocalDate.parse(line, dateFormatter);
+		person.setGeburtsdatum(Geburtsdatum);
 		
 
 		System.out.println("Geben Sie die Postleitzahl ein: ");
 		Scanner plz = new Scanner(System.in);
 		int PLZ = plz.nextInt();
+		person.getAdresse().setPlz(PLZ);
 
 		System.out.println("Geben Sie die Strasse ein: ");
 		Scanner strasse = new Scanner(System.in);
 		String Strasse = strasse.nextLine();
+		person.getAdresse().setStrasse(Strasse);
 
 		System.out.println("Geben Sie den Ort ein: ");
 		Scanner ort = new Scanner(System.in);
 		String Ort = ort.nextLine();
+		person.getAdresse().setOrt(Ort);
 
 		System.out.println("Geben Sie das Land ein: ");
 		Scanner land = new Scanner(System.in);
 		String Land = land.nextLine();
+		person.getAdresse().setLand(Land);
 
 		System.out.println("Geben Sie die Telefonnummer ein: ");
 		Scanner tel = new Scanner(System.in);
 		int Telefon = tel.nextInt();
+		person.getKontakt().setTelefon(Telefon);
 
 		System.out.println("Geben Sie die Email ein: ");
 		Scanner email = new Scanner(System.in);
 		String Email = email.nextLine();
-
+		person.getKontakt().setEmail(Email);
 
 
 			/* Person erzeugen */
