@@ -100,7 +100,7 @@ public class VerwaltungImpl implements Verwaltung {
 	 */
 	@Override
 	public List<Person> alle() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		// TODO Auto-generated method stub 
+		return persister.alle();
 	}
 }

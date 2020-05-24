@@ -1,10 +1,14 @@
 package prg.vereinverwaltung.ui;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,6 +33,13 @@ public class UI {
 	private static final String MENU_2_1_1 = "Mitglied editieren [1]     Mitglied Loeschen [2]     Zurueck [3]";
 	private static final String MENU_2_1_2 = "Mitglied-Nr [1]     Name und Vorname [2]     Exportieren [3] Zurueck [4]";
 
+	
+	/* Liste, in der Personen-Instanzen verwaltet werden */
+	// Array List Resizable-array implementation of the List interface. Implements all optional list operations, and permits all elements, including null.
+	//Eine personListe erstellen mit Personen
+	private List<Person> personListe = new ArrayList<>();
+	
+	
 	/* Start-Menu */
 	private static String menu = MENU_1_0_0;
 
@@ -43,8 +54,9 @@ public class UI {
 
 	/**
 	 * Steuert die Ausführung des Programms
+	 * @throws ParseException 
 	 */
-	public void execute() {
+	public void execute() throws ParseException {
 		int wahl = 0;
 		
 		menu = MENU_1_0_0;
@@ -59,6 +71,7 @@ public class UI {
 			break;
 		case 2:
 			System.out.println("Daten Laden");
+			datenLaden();
 			auswahlMenu2_0_0();
 			break;
 		case 3:
@@ -73,7 +86,7 @@ public class UI {
 
 	}
 
-	private void auswahlMenu2_0_0() {
+	private void auswahlMenu2_0_0() throws ParseException {
 		int wahl = 0;
 
 		
@@ -104,7 +117,7 @@ public class UI {
 		
 	}
 
-	private void auswahlMenu2_1_0() {
+	private void auswahlMenu2_1_0() throws ParseException {
 		int wahl = 0;
 		
 		System.out.println("\nSuchkriterium waehlen: ");
@@ -127,7 +140,19 @@ public class UI {
 			break;
 		case 3:
 			// alle anzeigen todo
-			auswahlMenu2_1_2();
+			personListe = findeAllePersonen();
+			
+			//Wenn true
+			if (personListe.size() > 0) {
+				menu = MENU_2_1_2;
+				showAllPersonen(personListe);
+				
+			//Wenn false	
+			} else {
+				System.out.println("\n Keine Daten gefunden!");
+				menu = MENU_2_1_0;
+			}
+			//auswahlMenu2_1_2();
 
 			break;
 		case 4:
@@ -141,7 +166,26 @@ public class UI {
 		
 	}
 
-	private void auswahlMenu2_1_1() {
+	private void showAllPersonen(Iterable<Person> personen) {
+		// TODO Auto-generated method stub
+		//show Methode
+			for (Person person : personen) {
+				//+= Addiert einen Wert zu der angegebenen Variablen
+				String str = "";
+				str += "Person-Nr:    " + person.getPersonenNummer();
+				str += "\nName und Vorname: " + person.getName() + " " + person.getVorname();
+				str += "\nGeburtsdatum:     " + person.getGeburtsdatum();
+				str += "\nAdresse:          " + person.getAdresse().getStrasse() + ", " + person.getAdresse().getPlz() + " "
+						+ person.getAdresse().getOrt();
+				str += "\nTelefon:          " + person.getKontakt().getTelefon();
+				str += "\nE-Mail:		  " + person.getKontakt().getEmail();
+
+				System.out.println(str);			
+				}
+		
+	}
+
+	private void auswahlMenu2_1_1() throws ParseException {
 		int wahl = 0;
 		
 		menu = MENU_2_1_1;
@@ -173,7 +217,7 @@ public class UI {
 		
 	}
 
-	private void auswahlMenu2_1_2() {
+	private void auswahlMenu2_1_2() throws ParseException {
 		int wahl = 0;
 		
 		System.out.println("Sortieren nach: ");
@@ -207,8 +251,8 @@ public class UI {
 		}
 	}
 
-
-	private void personHinzufuegen(){
+//Person hinzufuegen
+	private void personHinzufuegen() throws ParseException{
 		try {
 		System.out.println("Geben Sie den Vornamen ein: ");
 		Scanner vorname = new Scanner(System.in);
@@ -218,19 +262,14 @@ public class UI {
 		Scanner name = new Scanner(System.in);
 		String Name = name.nextLine();
 
-		System.out.println("Geben Sie das Geburtsdatum ein (dd.MM.yyyy): ");
+		System.out.println("Geben Sie das Geburtsdatum ein (YYYY-MM-DD): ");
 		Scanner geburtsdatum = new Scanner(System.in);
-		DateFormat format = new SimpleDateFormat("dd.MM.yyyy");
-		Date Geburtsdatum = null;
-		while (Geburtsdatum == null) {
-			String line = geburtsdatum.nextLine();
-			try {
-				Geburtsdatum = format.parse(line);
-			} catch (ParseException e) {
-				logger.error("Das Geburtsdatum weist das Falsche Format auf: ", e);
-				System.out.println("Ihre Eingabe ist nicht korrekt.");
-			}
-		}
+		
+		DateTimeFormatter dateFormatter = DateTimeFormatter.ISO_LOCAL_DATE;
+		LocalDate Geburtsdatum = null;
+		String line = geburtsdatum.nextLine();
+		Geburtsdatum = LocalDate.parse(line, dateFormatter);
+		
 
 		System.out.println("Geben Sie die Postleitzahl ein: ");
 		Scanner plz = new Scanner(System.in);
@@ -277,7 +316,24 @@ public class UI {
 			e.printStackTrace();
 		}
 	}
+	
+	//Daten laden
+		private List<Person> datenLaden() {
 
+			//Initialisierung
+			List<Person> personen = null;
+
+			try {
+				personen = verwaltung.alle();
+				
+			} catch (Exception e) {
+				logger.error("Fehler beim Versuch, daten zu Laden: ", e);
+				System.out.println("\nDaten konnten nicht geladen werden!");
+			}
+
+			return personen;
+		}
+		
 	private static int eingabeEinlesen() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("\nBitte Ihre Auswahl eingeben: ");
@@ -287,5 +343,21 @@ public class UI {
 		return eingabe;
 
 	}
+	
+	private List<Person> findeAllePersonen() {
+
+		List<Person> liste = null;
+
+		try {
+			liste = verwaltung.alle();
+		} catch (Exception e) {
+			logger.error("Fehler beim Versuch, daten zu laden: ", e);
+			System.err.println("ERROR:\nDaten konnten nicht geladen werden!");
+		}
+
+		return liste;
+	}
+	
+
 
 }

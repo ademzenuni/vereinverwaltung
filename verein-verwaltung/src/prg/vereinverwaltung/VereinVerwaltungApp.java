@@ -1,4 +1,6 @@
 package prg.vereinverwaltung;
+import java.io.File;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -27,13 +29,18 @@ public class VereinVerwaltungApp {
 		/* Persister instantiieren */
 		// Persister persister = new
 		// prg.vereinverwaltung.persister.impl.PersisterImpl();
-		/* Verwaltung-Komponente instantiieren */
 		try {
-		Persister persister = PersisterImpl.getPersister();
-
+		Persister persister = getPersister();
+		
+		
+		/* Verwaltung-Komponente instantiieren */
 		Verwaltung verwaltung = new VerwaltungImpl(persister);
+		
+		
 		/* UI-Komponente instantieeren */
 		UI ui = new UI(verwaltung);
+		
+		
 		/* Ausführung starten */
 		ui.execute();
 		System.out.println("\nDie Programmausführung wird beendet.\n");
@@ -43,5 +50,22 @@ public class VereinVerwaltungApp {
 			System.out.println("Die App wurde aus einem unbekannten Grund heruntergefahren.");
 		}
 		
+	}
+	
+	//Eigener Code Persister 
+	private static Persister getPersister() throws Exception {
+
+		String userHome = System.getProperty("user.home");
+
+		/* File Name - Daten als Plain Text */
+		String fileName = "localDatabase.txt";
+
+		
+		//File.separator: You might want to use File.separator in UI, however, because it's best to show people what will make sense in their OS, rather than what makes sense to Java.
+		File file = new File(userHome + File.separator + fileName);
+		Persister persister = new PersisterImpl(file);
+
+		return persister;
+
 	}
 }

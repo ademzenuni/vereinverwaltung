@@ -7,11 +7,19 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import prg.vereinverwaltung.domain.Adresse;
+import prg.vereinverwaltung.domain.Kontakt;
 import prg.vereinverwaltung.domain.Person;
 import prg.vereinverwaltung.persister.api.Persister;
 
@@ -45,22 +53,6 @@ public class PersisterImpl implements Persister {
 	private static int nextId;
 	
 	
-	public static Persister getPersister() throws Exception {
-		String userHome = System.getProperty("user.home");
-
-		/* File Name - Daten als Plain Text */
-		String fileName = "localDatabase.txt";
-
-		
-		//File.separator: You might want to use File.separator in UI, however, because it's best to show people what will make sense in their OS, rather than what makes sense to Java.
-		File file = new File(userHome + File.separator + fileName);
-		Persister persister = new PersisterImpl(file);
-
-		return persister;
-
-	}
-	
-	
 	public PersisterImpl(File localDatabase) throws Exception {
 		this.localDatabase = localDatabase;
 		nextId = 0;
@@ -87,7 +79,7 @@ public class PersisterImpl implements Persister {
 	private void initNextId() throws IOException {
 		int maxValue = 0;
 
-		// Alles auslesen, Wert f�r 'nextId' um eins gr�sser als 'maxValue'
+		// Alles auslesen, Wert für 'nextId' um eins grösser als 'maxValue'
 		
 		//FileReader: Creates a new FileReader, given the File to read from.
 		//Buffered Reader:JAVA Docs: will buffer the input from the specified file. Without buffering, each invocation of read() or readLine() could cause bytes to be read from the file, 
@@ -151,8 +143,9 @@ public class PersisterImpl implements Persister {
 			//Bilden des sBuilder mit Delimiter dazwischen
 			sBuilder.append(p.getPersonenNummer()).append(DELIMITER).append(p.getName()).append(DELIMITER)
 					.append(p.getVorname()).append(DELIMITER).append(p.getGeburtsdatum()).append(DELIMITER)
-					.append(p.getAdresse().getStrasse()).append(DELIMITER).append(p.getAdresse().getPlz()).append(DELIMITER)
-					.append(p.getAdresse().getOrt()).append(DELIMITER).append(p.getKontakt().getTelefon()).append(DELIMITER)
+					.append(p.getAdresse().getPlz()).append(DELIMITER).append(p.getAdresse().getStrasse()).append(DELIMITER)
+					.append(p.getAdresse().getOrt()).append(DELIMITER).append(p.getAdresse().getLand()).append(DELIMITER)
+					.append(p.getKontakt().getTelefon()).append(DELIMITER)
 					.append(p.getKontakt().getEmail());
 
 			return sBuilder.toString();
@@ -223,8 +216,52 @@ public class PersisterImpl implements Persister {
 	 */
 	@Override
 	public List<Person> alle() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		
+		//Neues Array mit Personenliste
+		List<Person> liste = new ArrayList<>();
+
+		if (localDatabase.exists()) {
+			
+			//FileReader: Creates a new FileReader, given the File to read from.
+			//Buffered Reader:JAVA Docs: will buffer the input from the specified file. Without buffering, each invocation of read() or readLine() could cause bytes to be read from the file, 
+			//converted into characters, and then returned, which can be very inefficient.
+			try (BufferedReader br = new BufferedReader(new FileReader(localDatabase))) {
+				String line = null;
+
+				// != ungleich
+				while ((line = br.readLine()) != null) {
+					liste.add(getAsPerson(line));
+				}
+			}
+		}
+
+		return liste;
 	}
+	
+	private Person getAsPerson(String line) throws ParseException {
+
+		
+		String[] parts = line.split(DELIMITER);
+
+		//Erstellung, Zueweisen der parts der verschiedenen Variablen
+		int personenNummer = Integer.parseInt(parts[0]);
+		String vorname = parts[1];
+		String name = parts[2];
+		DateTimeFormatter dateFormatter = DateTimeFormatter.ISO_LOCAL_DATE;
+        LocalDate geburtsdatum = LocalDate.parse(parts[3], dateFormatter);
+		int plz = Integer.parseInt(parts[4]);
+		String strasse = parts[5];
+		String ort = parts[6];
+		String land = parts[7];
+		int tel = Integer.parseInt(parts[8]);
+		String email = parts[9];
+
+
+		Person person = new Person(vorname, name, geburtsdatum, plz, strasse, ort, land, tel, email);
+		person.setPersonenNummer(personenNummer);
+
+		return person;
+	}
+
 
 }
