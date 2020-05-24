@@ -568,3 +568,32 @@ Caused by: java.time.DateTimeException: Invalid value for MonthOfYear (valid val
 	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052) ~[?:?]
 	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948) ~[?:?]
 	... 7 more
+2020-05-24 20:37:19,577 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: Hollenstein, Vorname: Stefan, Geburtstag: 1996-08-14, Kontakt: prg.vereinverwaltung.domain.Kontakt@58594a11, Adresse=prg.vereinverwaltung.domain.Adresse@2a3888c1
+2020-05-24 20:37:52,361 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: Zenuni, Vorname: Adem, Geburtstag: 1997-10-02, Kontakt: prg.vereinverwaltung.domain.Kontakt@3406472c, Adresse=prg.vereinverwaltung.domain.Adresse@5717c37
+2020-05-24 20:38:53,648 INFO p.v.b.i.VerwaltungImpl [main] PERSON WIRD AKTUALISIERT: Name: Zenuniiii, Vorname: Adeeem, Geburtstag: 2000-01-01, Kontakt: prg.vereinverwaltung.domain.Kontakt@4816278d, Adresse=prg.vereinverwaltung.domain.Adresse@4eaf3684
+2020-05-24 20:38:53,648 INFO p.v.b.i.VerwaltungImpl [main] PERSON AKTUALISIERT: Name: Zenuniiii, Vorname: Adeeem, Geburtstag: 2000-01-01, Kontakt: prg.vereinverwaltung.domain.Kontakt@4816278d, Adresse=prg.vereinverwaltung.domain.Adresse@4eaf3684
+2020-05-24 22:29:45,422 ERROR p.v.u.UI [main] ERROR
+ Person konnte nicht hinzugefuegt werden!
+java.time.format.DateTimeParseException: Text 'a' could not be parsed at index 0
+	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2046) ~[?:?]
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948) ~[?:?]
+	at java.time.LocalDate.parse(LocalDate.java:428) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:261) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:96) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:72) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 22:33:12,382 ERROR p.v.u.UI [main] ERROR:
+ Person konnte nicht hinzugefuegt werden!
+2020-05-24 22:43:06,322 ERROR p.v.u.UI [main] ERROR:
+ Person konnte nicht hinzugefuegt werden!
+java.time.format.DateTimeParseException: Text 's' could not be parsed at index 0
+	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2046) ~[?:?]
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948) ~[?:?]
+	at java.time.LocalDate.parse(LocalDate.java:428) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:257) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:94) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:70) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 22:45:16,048 INFO p.v.b.i.VerwaltungImpl [main] PERSON WIRD AKTUALISIERT: Name: Zenuni, Vorname: Adem, Geburtstag: 1994-01-01, Kontakt: prg.vereinverwaltung.domain.Kontakt@4f74980d, Adresse=prg.vereinverwaltung.domain.Adresse@6c372fe6
+2020-05-24 22:45:16,055 INFO p.v.b.i.VerwaltungImpl [main] PERSON AKTUALISIERT: Name: Zenuni, Vorname: Adem, Geburtstag: 1994-01-01, Kontakt: prg.vereinverwaltung.domain.Kontakt@4f74980d, Adresse=prg.vereinverwaltung.domain.Adresse@6c372fe6
+2020-05-24 22:57:58,412 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: Obrist, Vorname: Ernst, Geburtstag: 2000-01-01, Kontakt: prg.vereinverwaltung.domain.Kontakt@39655d3e, Adresse=prg.vereinverwaltung.domain.Adresse@34f22f9d
