@@ -1,0 +1,570 @@
+2020-05-23 12:27:56,034 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "veev"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:100) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:63) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 13:42:50,479 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:127) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:86) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:67) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 13:42:50,634 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:127) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:86) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:67) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 13:42:50,776 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:127) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:86) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:67) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 13:42:52,749 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:127) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:86) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:67) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 13:42:53,376 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:127) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:86) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:67) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 13:42:53,646 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:127) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:86) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:67) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 13:42:54,686 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "a"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:127) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:86) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:67) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:55,447 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:55,709 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:56,501 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:56,767 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:56,971 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:57,155 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:57,343 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:57,542 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:57,745 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:57,944 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:58,165 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:58,372 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:58,632 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "3"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:58,930 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "e"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:59,192 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "e"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:59,424 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "e"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:14:59,921 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:15:00,394 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "r"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:15:00,668 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "r"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:15:00,961 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "r"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:15:01,215 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "r"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:15:01,510 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "r"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:15:02,157 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "r"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:15:02,765 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:15:03,381 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:15:56,943 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "efw"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 14:16:02,996 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "fvfv"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:227) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 15:00:59,078 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "02.10,1997"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:228) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:34) [bin/:?]
+2020-05-23 15:40:09,310 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: zenuni, Vorname: adem, Geburtstag: Thu Oct 02 00:00:00 CEST 1997, Kontakt: prg.vereinverwaltung.domain.Kontakt@24c4ddae, Adresse=prg.vereinverwaltung.domain.Adresse@37fb0bed
+2020-05-23 15:45:52,449 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: zenuni, Vorname: adem, Geburtstag: Thu Oct 02 00:00:00 CEST 1997, Kontakt: prg.vereinverwaltung.domain.Kontakt@13b3d178, Adresse=prg.vereinverwaltung.domain.Adresse@24c4ddae
+2020-05-23 15:49:45,026 ERROR p.v.u.UI [main] Das Geburtsdatum weist das Falsche Format auf: 
+java.text.ParseException: Unparseable date: "s"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personHinzufuegen(UI.java:228) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:57) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:38) [bin/:?]
+2020-05-23 15:49:51,380 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: s, Vorname: s, Geburtstag: Thu Oct 02 00:00:00 CEST 1997, Kontakt: prg.vereinverwaltung.domain.Kontakt@1a72a540, Adresse=prg.vereinverwaltung.domain.Adresse@27d5a580
+2020-05-23 15:49:51,562 ERROR p.v.VereinVerwaltungApp [main] >> Fehler: 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:939) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.eingabeEinlesen(UI.java:285) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:83) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:58) ~[bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:38) [bin/:?]
+2020-05-23 16:02:29,871 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: zenuni, Vorname: adem, Geburtstag: Thu Oct 02 00:00:00 CEST 1997, Kontakt: prg.vereinverwaltung.domain.Kontakt@4426bff1, Adresse=prg.vereinverwaltung.domain.Adresse@3c7c886c
+2020-05-23 16:03:22,862 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: holl, Vorname: stef, Geburtstag: Thu Oct 02 00:00:00 CEST 1997, Kontakt: prg.vereinverwaltung.domain.Kontakt@2ea6e30c, Adresse=prg.vereinverwaltung.domain.Adresse@6138e79a
+2020-05-24 12:30:22,212 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.text.ParseException: Unparseable date: "Thu Oct 02 00:00:00 CEST 1997"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:247) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:230) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:290) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:63) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 12:31:28,599 ERROR p.v.VereinVerwaltungApp [main] >> Fehler: 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:939) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.eingabeEinlesen(UI.java:304) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:54) ~[bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 12:32:34,920 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.text.ParseException: Unparseable date: "Thu Oct 02 00:00:00 CEST 1997"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:247) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:230) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:290) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:63) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 12:37:57,928 ERROR p.v.VereinVerwaltungApp [main] >> Fehler: 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:939) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.eingabeEinlesen(UI.java:304) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:54) ~[bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 12:38:18,820 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.text.ParseException: Unparseable date: "Thu Oct 02 00:00:00 CEST 1997"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:247) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:230) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:290) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:63) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 12:39:32,778 ERROR p.v.VereinVerwaltungApp [main] >> Fehler: 
+java.util.NoSuchElementException: null
+	at java.util.Scanner.throwFor(Scanner.java:937) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.eingabeEinlesen(UI.java:285) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:83) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_0(UI.java:134) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_2(UI.java:201) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_0(UI.java:125) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:93) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:58) ~[bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 12:39:33,281 ERROR p.v.VereinVerwaltungApp [main] >> Fehler: 
+java.util.NoSuchElementException: null
+	at java.util.Scanner.throwFor(Scanner.java:937) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.eingabeEinlesen(UI.java:285) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:83) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:58) ~[bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:44) [bin/:?]
+2020-05-24 12:39:37,808 ERROR p.v.VereinVerwaltungApp [main] >> Fehler: 
+java.util.NoSuchElementException: null
+	at java.util.Scanner.throwFor(Scanner.java:937) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.eingabeEinlesen(UI.java:304) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:85) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:64) ~[bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 12:44:17,398 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.lang.NumberFormatException: For input string: "rum"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:249) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:230) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(Unknown Source) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(Unknown Source) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(Unknown Source) [bin/:?]
+2020-05-24 12:47:18,456 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.text.ParseException: Unparseable date: "Thu Oct 02 00:00:00 CEST 1997"
+	at java.text.DateFormat.parse(DateFormat.java:395) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:247) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(Unknown Source) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:290) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:63) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:12:14,039 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: zenuni, Vorname: adem, Geburtstag: 1997-10-02, Kontakt: prg.vereinverwaltung.domain.Kontakt@57c03d88, Adresse=prg.vereinverwaltung.domain.Adresse@16aa8654
+2020-05-24 13:12:45,489 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.time.format.DateTimeParseException: Text 'adem' could not be parsed at index 0
+	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2046) ~[?:?]
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948) ~[?:?]
+	at java.time.LocalDate.parse(LocalDate.java:428) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:251) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:232) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:290) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:102) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:62) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:13:39,065 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.time.format.DateTimeParseException: Text 'adem' could not be parsed at index 0
+	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2046) ~[?:?]
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948) ~[?:?]
+	at java.time.LocalDate.parse(LocalDate.java:428) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:251) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:232) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:290) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:14:22,964 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.time.format.DateTimeParseException: Text 'adem' could not be parsed at index 0
+	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2046) ~[?:?]
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948) ~[?:?]
+	at java.time.LocalDate.parse(LocalDate.java:428) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:251) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:232) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:290) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:15:22,887 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.time.format.DateTimeParseException: Text '1997-10-02' could not be parsed at index 2
+	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2046) ~[?:?]
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948) ~[?:?]
+	at java.time.LocalDate.parse(LocalDate.java:428) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:250) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:232) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:290) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:15:55,345 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.time.format.DateTimeParseException: Text '1997-10-02' could not be parsed at index 2
+	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2046) ~[?:?]
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948) ~[?:?]
+	at java.time.LocalDate.parse(LocalDate.java:428) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:250) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:232) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:290) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:25:46,937 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: zenuni, Vorname: adem, Geburtstag: 2020-10-02, Kontakt: prg.vereinverwaltung.domain.Kontakt@16aa8654, Adresse=prg.vereinverwaltung.domain.Adresse@6d7fc27
+2020-05-24 13:26:06,967 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.lang.NumberFormatException: For input string: "rumiweg"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:251) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:232) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:288) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:102) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:62) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:26:15,730 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.lang.NumberFormatException: For input string: "rumiweg"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:251) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:232) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:288) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:27:40,718 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.lang.NumberFormatException: For input string: "rumiweg"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:251) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(Unknown Source) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(Unknown Source) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(Unknown Source) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:28:39,130 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.lang.NumberFormatException: For input string: "rumiweg"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:251) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:232) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:288) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:32:48,293 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: Zenuni, Vorname: Adem, Geburtstag: 2020-10-02, Kontakt: prg.vereinverwaltung.domain.Kontakt@57c03d88, Adresse=prg.vereinverwaltung.domain.Adresse@16aa8654
+2020-05-24 13:33:14,361 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.lang.NumberFormatException: For input string: "gaa"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:255) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:232) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:288) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:36:46,672 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.lang.NumberFormatException: For input string: "gaa"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:255) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:232) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:288) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:37:36,406 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.lang.NumberFormatException: For input string: "gaa"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:256) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:233) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:288) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:37:40,189 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.lang.NumberFormatException: For input string: "gaa"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(PersisterImpl.java:256) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(PersisterImpl.java:233) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(UI.java:288) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:66) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:39:29,134 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: Zenuni, Vorname: Adem, Geburtstag: 2019-10-02, Kontakt: prg.vereinverwaltung.domain.Kontakt@57c03d88, Adresse=prg.vereinverwaltung.domain.Adresse@16aa8654
+2020-05-24 13:40:58,988 ERROR p.v.VereinVerwaltungApp [main] >> Fehler: 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:939) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.eingabeEinlesen(UI.java:302) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:88) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:62) ~[bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 13:41:23,749 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: stef, Vorname: stef, Geburtstag: 1997-01-01, Kontakt: prg.vereinverwaltung.domain.Kontakt@16aa8654, Adresse=prg.vereinverwaltung.domain.Adresse@6d7fc27
+2020-05-24 14:01:33,027 ERROR p.v.u.UI [main] Fehler beim Versuch, daten zu Laden: 
+java.lang.NumberFormatException: For input string: "rumiweg"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.getAsPerson(Unknown Source) ~[bin/:?]
+	at prg.vereinverwaltung.persister.impl.PersisterImpl.alle(Unknown Source) ~[bin/:?]
+	at prg.vereinverwaltung.business.impl.VerwaltungImpl.alle(VerwaltungImpl.java:104) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.datenLaden(Unknown Source) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(Unknown Source) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 15:40:05,380 ERROR p.v.VereinVerwaltungApp [main] >> Fehler: 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:939) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.eingabeEinlesen(UI.java:372) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_2(UI.java:237) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_2(UI.java:246) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_0(UI.java:141) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:107) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:76) ~[bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 15:42:10,031 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: Mueller, Vorname: Hans, Geburtstag: 1997-10-10, Kontakt: prg.vereinverwaltung.domain.Kontakt@16aa8654, Adresse=prg.vereinverwaltung.domain.Adresse@6d7fc27
+2020-05-24 15:45:19,858 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: Steiner, Vorname: Rudolf, Geburtstag: 1997-10-10, Kontakt: prg.vereinverwaltung.domain.Kontakt@16aa8654, Adresse=prg.vereinverwaltung.domain.Adresse@6d7fc27
+2020-05-24 15:58:11,665 ERROR p.v.VereinVerwaltungApp [main] >> Fehler: 
+java.lang.NullPointerException: null
+	at prg.vereinverwaltung.ui.UI.showPerson(UI.java:178) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_0(UI.java:137) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:108) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:77) ~[bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-24 16:39:08,517 INFO p.v.b.i.VerwaltungImpl [main] PERSON WIRD AKTUALISIERT: Name: Ademm, Vorname: Zenuni, Geburtstag: 2019-10-02, Kontakt: prg.vereinverwaltung.domain.Kontakt@14008db3, Adresse=prg.vereinverwaltung.domain.Adresse@78a773fd
+2020-05-24 16:39:08,521 INFO p.v.b.i.VerwaltungImpl [main] PERSON AKTUALISIERT: Name: Ademm, Vorname: Zenuni, Geburtstag: 2019-10-02, Kontakt: prg.vereinverwaltung.domain.Kontakt@14008db3, Adresse=prg.vereinverwaltung.domain.Adresse@78a773fd
+2020-05-24 16:42:41,475 INFO p.v.b.i.VerwaltungImpl [main] PERSON WIRD AKTUALISIERT: Name: Zenunii, Vorname: Ademm, Geburtstag: 2019-10-10, Kontakt: prg.vereinverwaltung.domain.Kontakt@386f0da3, Adresse=prg.vereinverwaltung.domain.Adresse@39655d3e
+2020-05-24 16:42:41,679 INFO p.v.b.i.VerwaltungImpl [main] PERSON AKTUALISIERT: Name: Zenunii, Vorname: Ademm, Geburtstag: 2019-10-10, Kontakt: prg.vereinverwaltung.domain.Kontakt@386f0da3, Adresse=prg.vereinverwaltung.domain.Adresse@39655d3e
+2020-05-24 16:46:29,588 INFO p.v.b.i.VerwaltungImpl [main] PERSON WIRD AKTUALISIERT: Name: Zenunii, Vorname: Ademm, Geburtstag: 2019-10-10, Kontakt: prg.vereinverwaltung.domain.Kontakt@14008db3, Adresse=prg.vereinverwaltung.domain.Adresse@78a773fd
+2020-05-24 16:46:29,592 INFO p.v.b.i.VerwaltungImpl [main] PERSON AKTUALISIERT: Name: Zenunii, Vorname: Ademm, Geburtstag: 2019-10-10, Kontakt: prg.vereinverwaltung.domain.Kontakt@14008db3, Adresse=prg.vereinverwaltung.domain.Adresse@78a773fd
+2020-05-24 16:47:07,644 ERROR p.v.VereinVerwaltungApp [main] >> Fehler: 
+java.time.format.DateTimeParseException: Text '2019-20-20' could not be parsed: Invalid value for MonthOfYear (valid values 1 - 12): 20
+	at java.time.format.DateTimeFormatter.createError(DateTimeFormatter.java:2017) ~[?:?]
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1952) ~[?:?]
+	at java.time.LocalDate.parse(LocalDate.java:428) ~[?:?]
+	at prg.vereinverwaltung.ui.UI.personendatenBearbeiten(UI.java:229) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_1(UI.java:189) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_0(UI.java:140) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:110) ~[bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:79) ~[bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+Caused by: java.time.DateTimeException: Invalid value for MonthOfYear (valid values 1 - 12): 20
+	at java.time.temporal.ValueRange.checkValidIntValue(ValueRange.java:330) ~[?:?]
+	at java.time.temporal.ChronoField.checkValidIntValue(ChronoField.java:736) ~[?:?]
+	at java.time.chrono.IsoChronology.resolveYMD(IsoChronology.java:643) ~[?:?]
+	at java.time.chrono.IsoChronology.resolveYMD(IsoChronology.java:126) ~[?:?]
+	at java.time.chrono.AbstractChronology.resolveDate(AbstractChronology.java:442) ~[?:?]
+	at java.time.chrono.IsoChronology.resolveDate(IsoChronology.java:585) ~[?:?]
+	at java.time.chrono.IsoChronology.resolveDate(IsoChronology.java:126) ~[?:?]
+	at java.time.format.Parsed.resolveDateFields(Parsed.java:360) ~[?:?]
+	at java.time.format.Parsed.resolveFields(Parsed.java:266) ~[?:?]
+	at java.time.format.Parsed.resolve(Parsed.java:253) ~[?:?]
+	at java.time.format.DateTimeParseContext.toResolved(DateTimeParseContext.java:331) ~[?:?]
+	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052) ~[?:?]
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1948) ~[?:?]
+	... 7 more
