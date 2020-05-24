@@ -43,6 +43,8 @@ public class UI {
 	private List<Person> sucheNameVorname = new ArrayList<>();
 
 
+	private Person person;
+
 	
 	/* Start-Menu */
 	private static String menu = MENU_1_0_0;
@@ -137,7 +139,7 @@ public class UI {
 			//Mitglied nr eingeben und equals und anzeigen
 			Person person = sucheMitgliedNr();
 			showPersonAsString(person);
-			auswahlMenu2_1_1();
+			auswahlMenu2_1_1(person);
 			break;
 		case 2:
 			// Name und Vorname eingeben und suchen und anzeigen todo
@@ -174,7 +176,7 @@ public class UI {
 	}
 
 
-	private void auswahlMenu2_1_1() throws Exception {
+	private void auswahlMenu2_1_1(Person person) throws Exception {
 		int wahl = 0;
 		
 		menu = MENU_2_1_1;
@@ -186,12 +188,12 @@ public class UI {
 		switch (wahl) {
 		case 1:
 			//Mitglied editieren TODO
-			personendatenBearbeiten();
-
+			personendatenBearbeiten(person);
 			auswahlMenu2_1_0();
 			break;
 		case 2:
 			//Mitglied lieschen TODO
+			personLoeschen(person);
 			auswahlMenu2_1_0();
 			break;
 		case 3:
@@ -199,7 +201,7 @@ public class UI {
 			break;
 		default:
 			System.out.println("Ihre wahl ist ungültig.");
-			auswahlMenu2_1_1();
+			auswahlMenu2_1_1(person);
 			break;
 		}
 		
@@ -208,12 +210,24 @@ public class UI {
 		
 	}
 
-	private void personendatenBearbeiten() throws Exception {
+	private void personLoeschen(Person person) {
+
+		try {
+			verwaltung.personLoeschen(person);
+			System.out.println("\nPerson erfolgreich geloescht.");
+		} catch (Exception e) {
+			logger.error("Fehler beim Versuch, eine neue Person zu loeschen: ", e);
+			System.out.println("\nPerson konnte nicht geloescht werden!");
+		}		
+	}
+
+	private void personendatenBearbeiten(Person person) throws Exception {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Geben Sie den Namen ein: ");
 		Scanner name = new Scanner(System.in);
 		String Name = name.nextLine();
+		person.setName(Name);
 			
 		System.out.println("Geben Sie den Vornamen ein: ");
 		Scanner vorname = new Scanner(System.in);
@@ -256,8 +270,8 @@ public class UI {
 
 
 			/* Person erzeugen */
-			Person person = new Person(Vorname, Name, Geburtsdatum, PLZ, Strasse, Ort, Land, Telefon, Email);
-
+		//PErson wird bereits mitgesendet.
+			//Person person = new Person(Vorname, Name, Geburtsdatum, PLZ, Strasse, Ort, Land, Telefon, Email);
 
 			/* Id �bernehmen */
 			person.setPersonenNummer(person.getPersonenNummer());
@@ -272,7 +286,7 @@ public class UI {
 			} else {
 				System.out.println("\nPerson konnte nicht aktualisiert werden!");
 			}
-		
+	
 	}
 
 	private void auswahlMenu2_1_2() throws Exception {

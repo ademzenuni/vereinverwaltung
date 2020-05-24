@@ -72,8 +72,12 @@ public class VerwaltungImpl implements Verwaltung {
 	 */
 	@Override
 	public boolean personLoeschen(Person person) throws Exception {
-		// TODO Auto-generated method stub
-		return false;
+		//Eigener Code
+		//Aufruf loeschen in PersisterImpl
+		boolean success = persister.loeschen(person);
+		logger.info("PERSON GELOESCHT: " + person.toString());
+
+		return success;
 	}
 
 	/*
