@@ -19,9 +19,9 @@ import prg.vereinverwaltung.domain.Kontakt;
 import prg.vereinverwaltung.domain.Person;
 
 /**
- * Diese Klasse stellt die Benutzerschnittstelle zur Verfügung.
+ * Diese Klasse stellt die Benutzerschnittstelle zur Verfuegung.
  * 
- * @author jsucur
+ * @author shollenstein, azenuni
  * @version 1.0
  */
 public class UI {
