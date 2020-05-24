@@ -13,104 +13,69 @@ import prg.vereinverwaltung.persister.api.Persister;
  * Diese Klasse stellt eine konkrete Implementierung der Schnittstelle
  * 'Verwaltung' dar.
  * 
- * @author jsucur
+ * @author azenuni, shollenstein
  * @version 1.0
  */
 public class VerwaltungImpl implements Verwaltung {
-	
-	//Eigener Code 
-		private static Logger logger = LogManager.getLogger(VerwaltungImpl.class);
+
+	// Logger erstellen
+	private static Logger logger = LogManager.getLogger(VerwaltungImpl.class);
 
 	/**
 	 * Persister-Komponente
 	 */
+
+	// Persister erstellen
 	private Persister persister;
 
+	//Konstruktor
 	public VerwaltungImpl(Persister persister) {
 		this.persister = persister;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.business.api.Verwaltung#personHinzuguefen(prg.
-	 * vereinverwaltung.domain.Person)
-	 */
 	@Override
+	// Person wird uebergeben
 	public Person personHinzufuegen(Person person) throws Exception {
-		//Eigener Code
-		//Person wird durch speichern in PersisterImpl abgespeichert
-		//Erstellen des Logeintrags
 		Person newPerson = persister.speichern(person);
-		logger.info("PERSON HINZUGEFUEGT: " + newPerson.toString());
+		logger.info("INFO: Person hinzugefuegt: " + newPerson.toString());
 		return newPerson;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.business.api.Verwaltung#personAktualisieren(prg.
-	 * vereinverwaltung.domain.Person)
-	 */
 	@Override
+	// Uebergabe der neuen Person
 	public Person personAktualisieren(Person person) throws Exception {
-		//Eigener Code
-		//Logeintrag das Person aktualisiert wird
-		//Aufruf aktualisieren welche in PersisterImpl f�r speichern des Aktualisierung zust�ndig ist
-		logger.info("PERSON WIRD AKTUALISIERT: " + person.toString());
-		Person pAktualisiert = persister.aktualisieren(person);
-		logger.info("PERSON AKTUALISIERT: " + pAktualisiert.toString());
+		Person personNeu = persister.aktualisieren(person);
+		logger.info("INFO: Person aktualisiert: " + personNeu.toString());
 
-		return pAktualisiert;
+		return personNeu;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.business.api.Verwaltung#personLoeschen(prg.
-	 * vereinverwaltung.domain.Person)
-	 */
 	@Override
+	// Uebergabe des Boolean wertes ob Person geloescht wurde
 	public boolean personLoeschen(Person person) throws Exception {
-		//Eigener Code
-		//Aufruf loeschen in PersisterImpl
 		boolean success = persister.loeschen(person);
-		logger.info("PERSON GELOESCHT: " + person.toString());
+		logger.info("INFO: Person geloescht: " + person.toString());
 
 		return success;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.business.api.Verwaltung#finde(java.lang.String,
-	 * java.lang.String)
-	 */
 	@Override
+	//Uebergabe des Namen und Vornamen
 	public List<Person> finde(String name, String vorname) throws Exception {
-		// TODO Auto-generated method stub
+		logger.info("INFO: Person gefunden: " + name + vorname);
 		return persister.finde(name, vorname);
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.business.api.Verwaltung#finde(int)
-	 */
 	@Override
+	// Uebergabe der MitgliederNummer
 	public Person finde(int mnr) throws Exception {
-		// TODO Auto-generated method stub
+		logger.info("INFO: Person gefunden: " + mnr);
 		return persister.finde(mnr);
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.business.api.Verwaltung#alle()
-	 */
 	@Override
+	// Uebergabe der Personenliste die ausgegeben werden muss
 	public List<Person> alle() throws Exception {
-		// TODO Auto-generated method stub 
 		return persister.alle();
 	}
 }
