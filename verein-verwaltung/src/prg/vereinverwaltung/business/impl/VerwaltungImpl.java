@@ -54,8 +54,14 @@ public class VerwaltungImpl implements Verwaltung {
 	 */
 	@Override
 	public Person personAktualisieren(Person person) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		//Eigener Code
+		//Logeintrag das Person aktualisiert wird
+		//Aufruf aktualisieren welche in PersisterImpl f�r speichern des Aktualisierung zust�ndig ist
+		logger.info("PERSON WIRD AKTUALISIERT: " + person.toString());
+		Person pAktualisiert = persister.aktualisieren(person);
+		logger.info("PERSON AKTUALISIERT: " + pAktualisiert.toString());
+
+		return pAktualisiert;
 	}
 
 	/*
@@ -79,7 +85,7 @@ public class VerwaltungImpl implements Verwaltung {
 	@Override
 	public List<Person> finde(String name, String vorname) throws Exception {
 		// TODO Auto-generated method stub
-		return null;
+		return persister.finde(name, vorname);
 	}
 
 	/*
@@ -88,9 +94,9 @@ public class VerwaltungImpl implements Verwaltung {
 	 * @see prg.vereinverwaltung.business.api.Verwaltung#finde(int)
 	 */
 	@Override
-	public Person finde(int personNummer) throws Exception {
+	public Person finde(int mnr) throws Exception {
 		// TODO Auto-generated method stub
-		return null;
+		return persister.finde(mnr);
 	}
 
 	/*

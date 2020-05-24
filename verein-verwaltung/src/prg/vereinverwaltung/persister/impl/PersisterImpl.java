@@ -151,69 +151,115 @@ public class PersisterImpl implements Persister {
 			return sBuilder.toString();
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.persister.api.Persister#aktualisieren(prg.
-	 * vereinverwaltung.domain.Person)
-	 */
 	@Override
 	public Person aktualisieren(Person person) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		// != ungleich
+		if (person.getPersonenNummer() != 0) {
+			// Objekt bereits gespeichert: Update
+			loeschen(person.getPersonenNummer());
+			return speichern(person);
+		} else {
+			// Objekt nocht nicht gespeichert: Speichern
+			return speichern(person);
+		}
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.persister.api.Persister#loeschen(prg.
-	 * vereinverwaltung.domain.Person)
-	 */
 	@Override
 	public boolean loeschen(Person person) throws Exception {
 		// TODO Auto-generated method stub
-		return false;
+		return loeschen(person.getPersonenNummer());
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.persister.api.Persister#loeschen(int)
-	 */
+
 	@Override
 	public boolean loeschen(int personNummer) throws Exception {
-		// TODO Auto-generated method stub
-		return false;
+		//neues Array
+		ArrayList<String> liste = new ArrayList<>();
+
+		// Aus Datei lesen
+		//FileReader: Creates a new FileReader, given the File to read from.
+		//Buffered Reader:JAVA Docs: will buffer the input from the specified file. Without buffering, each invocation of read() or readLine() could cause bytes to be read from the file, 
+		//converted into characters, and then returned, which can be very inefficient.
+		try (BufferedReader br = new BufferedReader(new FileReader(localDatabase))) {
+			
+			//line ist hier leerer Wert
+			String line = null;
+			String id = "" + personNummer;
+
+			//while line = BufferedReader = ungleich null
+			while ((line = br.readLine()) != null) {
+
+				// Zeile mit 'personNummer' auslassen
+				if (!line.startsWith(id)) {
+					liste.add(line);
+				}
+			}
+		}
+
+		// Alles in Datei schreiben
+		//PrintWriter: Prints formatted representations of objects to a text-output stream. This class implements all of the print methods found in PrintStream.
+		//FileWriter: Convenience class for writing character files. The constructors of this class assume that the default character encoding and the default byte-buffer size are acceptable.
+		//
+		try (PrintWriter writer = new PrintWriter(new FileWriter(localDatabase, false))) {
+
+			for (String str : liste) {
+				writer.println(str);
+			}
+		}
+
+		return true;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.persister.api.Persister#finde(java.lang.String,
-	 * java.lang.String)
-	 */
+
 	@Override
 	public List<Person> finde(String name, String vorname) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		
+		//Neues Array mit Personenliste
+		List<Person> liste = new ArrayList<>();
+
+		///FileReader: Creates a new FileReader, given the File to read from.
+		//Buffered Reader:JAVA Docs: will buffer the input from the specified file. Without buffering, each invocation of read() or readLine() could cause bytes to be read from the file, 
+		//converted into characters, and then returned, which can be very inefficient.
+		try (BufferedReader br = new BufferedReader(new FileReader(localDatabase))) {
+			String line = null;
+
+			// != ungleich null
+			while ((line = br.readLine()) != null) {
+				
+				//String wird gesplittet in verschiedene Teile mit Delimiter dazwischen
+				String[] parts = line.split(DELIMITER);
+
+				// && = Und, true, genau dann wenn alle Argumente true sind
+				if ((parts[1].equals(name)) && (parts[2].equals(vorname))) {
+					liste.add(getAsPerson(line));
+				}
+			}
+		}
+		return liste;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.persister.api.Persister#finde(int)
-	 */
 	@Override
 	public Person finde(int personNummer) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		Person person = null;
+
+		try (BufferedReader br = new BufferedReader(new FileReader(localDatabase))) {
+			String line = null;
+
+			// != ungleich null
+			while ((line = br.readLine()) != null) {
+				
+				//String wird gesplittet in verschiedene Teile mit Delimiter dazwischen
+				String[] parts = line.split(DELIMITER);
+
+				// && = Und, true, genau dann wenn alle Argumente true sind
+				if ((Integer.parseInt(parts[0]) == personNummer)) {
+					person = getAsPerson(line);
+				}
+			}
+		}
+		return person;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see prg.vereinverwaltung.persister.api.Persister#alle()
-	 */
 	@Override
 	public List<Person> alle() throws Exception {
 		
