@@ -26,6 +26,7 @@ import prg.vereinverwaltung.domain.Person;
  */
 public class UI {
 
+	// Logger erstellen
 	private static Logger logger = LogManager.getLogger(UI.class);
 
 	/* Menu Strings die in jedem einzelnen Menu ausgegeben werden */
