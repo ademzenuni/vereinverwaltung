@@ -8,7 +8,7 @@ import prg.vereinverwaltung.domain.Person;
  * Diese Schnittstelle gibt die Funktionalitäten vor, welche für die Verwaltung
  * von Pesonendaten benötigt werden.
  * 
- * @author jsucur
+ * @author azenuni
  * @version 1.0
  */
 public interface Verwaltung {
@@ -25,7 +25,7 @@ public interface Verwaltung {
 	/**
 	 * Diese Methode aktualisiert die übergebene Person.
 	 * 
-	 * @param person
+	 * @param person 
 	 * @return
 	 * @throws Exception
 	 */

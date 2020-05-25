@@ -12,7 +12,7 @@ import prg.vereinverwaltung.ui.UI;
 /**
  * Diese Klasse ermöglicht das Starten der Applikation.
  *
- * @author jsucur
+ * @author azenuni
  * @version 1.0
  */
 

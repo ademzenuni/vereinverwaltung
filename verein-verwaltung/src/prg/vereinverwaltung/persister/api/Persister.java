@@ -8,7 +8,7 @@ import prg.vereinverwaltung.domain.Person;
  * Diese Schnittstelle gibt die Funktionalitäten vor, welche für die
  * Persistierung von Pesonendaten benötigt werden.
  * 
- * @author jsucur
+ * @author azenuni
  * @version 1.0
  */
 public interface Persister {

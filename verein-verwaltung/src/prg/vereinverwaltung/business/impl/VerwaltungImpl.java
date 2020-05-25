@@ -13,7 +13,7 @@ import prg.vereinverwaltung.persister.api.Persister;
  * Diese Klasse stellt eine konkrete Implementierung der Schnittstelle
  * 'Verwaltung' dar.
  * 
- * @author azenuni, shollenstein
+ * @author azenuni
  * @version 1.0
  */
 public class VerwaltungImpl implements Verwaltung {

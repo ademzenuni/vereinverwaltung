@@ -15,7 +15,7 @@ import prg.vereinverwaltung.domain.Person;
 /**
  * Diese Klasse stellt die Benutzerschnittstelle zur Verfuegung.
  * 
- * @author shollenstein, azenuni
+ * @author azenuni
  * @version 1.0
  */
 public class UI {
@@ -30,9 +30,9 @@ public class UI {
 	private static final String MENU_2_1_1 = "___________________________________________________________\nMitglied editieren [1]\nMitglied Loeschen [2]\n\nZurueck [3]";
 	private static final String MENU_2_1_2 = "___________________________________________________________\nSortieren nach:\nMitglied-Nr [1]\nName und Vorname [2]\nExportieren [3]\n\nZurueck [4]";
 
-	// Eine personListe erstellen mit Personen - Speicher für geladene Daten
+	// Eine personListe erstellen mit Personen - Speicher fï¿½r geladene Daten
 	private List<Person> personListe = new ArrayList<>();
-	// Personenliste für Suche nach Namen und Vornamen
+	// Personenliste fï¿½r Suche nach Namen und Vornamen
 	private List<Person> sucheNameVorname = new ArrayList<>();
 
 	/* Start-Menu */
@@ -444,11 +444,11 @@ public class UI {
 	}
 
 	// MENU PUNKT M_2_1_1
-	// Übergebenes Personobjekt wird mit den neuen Werten überschrieben/bearbeitet.
+	// ï¿½bergebenes Personobjekt wird mit den neuen Werten ï¿½berschrieben/bearbeitet.
 	private void personendatenBearbeiten(Person person) {
 
 		try {
-			// ID vom alten Objekt wird übernommen
+			// ID vom alten Objekt wird ï¿½bernommen
 			person.setPersonenNummer(person.getPersonenNummer());
 
 			Scanner sc = new Scanner(System.in);
