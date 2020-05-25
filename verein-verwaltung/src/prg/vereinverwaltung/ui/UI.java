@@ -217,7 +217,7 @@ public class UI {
 			auswahlMenu2_1_0();
 			break;
 		default:
-			System.out.println("Ihre wahl ist ungültig.");
+			System.out.println("Ihre Eingabe ist ungueltig.");
 			auswahlMenu2_1_2();
 			break;
 		}
@@ -512,9 +512,6 @@ public class UI {
 			// Bearbeitets Personenobjekt wird an die Verwaltungsklasse uebergeben!
 			person = verwaltung.personAktualisieren(person);
 
-			// Ungleich-Operator != Der Ungleichheits-Operator f�hrt einen Vergleich
-			// zweier Operanden aus. Wenn sich die beiden Operanden unterscheiden,
-			// so gibt der Operator den boolschen Wert true zur�ck, ansonsten false
 			if (person != null) {
 				System.out.println("\nPerson erfolgreich aktualisiert!");
 			} else {

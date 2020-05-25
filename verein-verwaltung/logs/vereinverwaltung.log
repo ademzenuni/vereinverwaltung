@@ -597,3 +597,26 @@ java.time.format.DateTimeParseException: Text 's' could not be parsed at index 0
 2020-05-24 22:45:16,048 INFO p.v.b.i.VerwaltungImpl [main] PERSON WIRD AKTUALISIERT: Name: Zenuni, Vorname: Adem, Geburtstag: 1994-01-01, Kontakt: prg.vereinverwaltung.domain.Kontakt@4f74980d, Adresse=prg.vereinverwaltung.domain.Adresse@6c372fe6
 2020-05-24 22:45:16,055 INFO p.v.b.i.VerwaltungImpl [main] PERSON AKTUALISIERT: Name: Zenuni, Vorname: Adem, Geburtstag: 1994-01-01, Kontakt: prg.vereinverwaltung.domain.Kontakt@4f74980d, Adresse=prg.vereinverwaltung.domain.Adresse@6c372fe6
 2020-05-24 22:57:58,412 INFO p.v.b.i.VerwaltungImpl [main] PERSON HINZUGEFUEGT: Name: Obrist, Vorname: Ernst, Geburtstag: 2000-01-01, Kontakt: prg.vereinverwaltung.domain.Kontakt@39655d3e, Adresse=prg.vereinverwaltung.domain.Adresse@34f22f9d
+2020-05-25 10:04:55,589 INFO p.v.b.i.VerwaltungImpl [main] INFO: Person gefunden: 2
+2020-05-25 10:21:27,448 INFO p.v.b.i.VerwaltungImpl [main] INFO: Person gefunden: 1
+2020-05-25 10:22:04,369 INFO p.v.b.i.VerwaltungImpl [main] INFO: Person aktualisiert: Name: Hollensteinn, Vorname: Stefann, Geburtstag: 1996-08-14, Kontakt: prg.vereinverwaltung.domain.Kontakt@7357a011, Adresse=prg.vereinverwaltung.domain.Adresse@3406472c
+2020-05-25 10:27:56,414 INFO p.v.b.i.VerwaltungImpl [main] INFO: Person gefunden: 2
+2020-05-25 10:28:28,973 INFO p.v.b.i.VerwaltungImpl [main] INFO: Person aktualisiert: Name: Zenunii, Vorname: Adem, Geburtstag: 1997-10-02, Kontakt: prg.vereinverwaltung.domain.Kontakt@7357a011, Adresse=prg.vereinverwaltung.domain.Adresse@3406472c
+2020-05-25 10:30:20,240 INFO p.v.b.i.VerwaltungImpl [main] INFO: Person gefunden: 10
+2020-05-25 10:30:20,242 ERROR p.v.u.UI [main] ERROR:
+ Fehler beim Versuch, einen String zu erstellen: 
+java.lang.NullPointerException: null
+	at prg.vereinverwaltung.ui.UI.showPersonAsString(UI.java:397) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_0(UI.java:127) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:101) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:71) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:105) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_0(UI.java:154) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_1(UI.java:176) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_1_0(UI.java:128) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.auswahlMenu2_0_0(UI.java:101) [bin/:?]
+	at prg.vereinverwaltung.ui.UI.execute(UI.java:71) [bin/:?]
+	at prg.vereinverwaltung.VereinVerwaltungApp.main(VereinVerwaltungApp.java:45) [bin/:?]
+2020-05-25 10:34:19,391 INFO p.v.b.i.VerwaltungImpl [main] INFO: Person gefunden: 10
+2020-05-25 10:34:19,396 ERROR p.v.u.UI [main] ERROR:
+ Fehler beim Versuch, einen String zu erstellen: 

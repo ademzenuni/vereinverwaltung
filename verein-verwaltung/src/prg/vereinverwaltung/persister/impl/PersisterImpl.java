@@ -90,18 +90,14 @@ public class PersisterImpl implements Persister {
 	}
 
 	@Override
-	// Class in Vorlage
 	public Person speichern(Person person) throws Exception {
 
-		// PrintWriter: Prints formatted representations of objects to a text-output
-		// stream. This class implements all of the print methods found in PrintStream.
-		// FileWriter: FileWriter(FileName, boolean). Constructs a FileWriter object
-		// given a file name with a boolean indicating whether or not to append the data
-		// written.
+		// PrintWriter erstellt einen Text Stream der dann mit dem FileWriter in das
+		// Textfile geschrieben wird.
 		try (PrintWriter writer = new PrintWriter(new FileWriter(localDatabase, true), true)) {
 
 			if (person.getPersonenNummer() == 0) {
-				// Neue Person: Person-Nummer setzen inkrementieren nextId++= nextId +1 Postfix
+				// Neue Person: Person-Nummer inkrementieren
 				person.setPersonenNummer(nextId++);
 			}
 
@@ -129,34 +125,23 @@ public class PersisterImpl implements Persister {
 
 	@Override
 	public Person aktualisieren(Person person) throws Exception {
-		// != ungleich
-		if (person.getPersonenNummer() != 0) {
-			// Objekt bereits gespeichert: Update
-			loeschen(person.getPersonenNummer());
-			return speichern(person);
-		} else {
-			// Objekt nocht nicht gespeichert: Speichern
-			return speichern(person);
-		}
+		// Vorhandenes Objekt loeschen
+		// Neues Objekt speichern
+		loeschen(person.getPersonenNummer());
+		return speichern(person);
 	}
 
 	@Override
 	public boolean loeschen(Person person) throws Exception {
-		// TODO Auto-generated method stub
 		return loeschen(person.getPersonenNummer());
 	}
 
 	@Override
-	public boolean loeschen(int personNummer) throws Exception {
+	public boolean loeschen(int personNummer) {
 		// neues Array
 		ArrayList<String> liste = new ArrayList<>();
 
 		// Aus Datei lesen
-		// FileReader: Creates a new FileReader, given the File to read from.
-		// Buffered Reader:JAVA Docs: will buffer the input from the specified file.
-		// Without buffering, each invocation of read() or readLine() could cause bytes
-		// to be read from the file,
-		// converted into characters, and then returned, which can be very inefficient.
 		try (BufferedReader br = new BufferedReader(new FileReader(localDatabase))) {
 
 			// line ist hier leerer Wert
@@ -173,13 +158,11 @@ public class PersisterImpl implements Persister {
 			}
 		}
 
+		catch (Exception e) {
+			logger.error("ERROR:\n Fehler beim Auslesen der Datei: ", e);
+		}
+
 		// Alles in Datei schreiben
-		// PrintWriter: Prints formatted representations of objects to a text-output
-		// stream. This class implements all of the print methods found in PrintStream.
-		// FileWriter: Convenience class for writing character files. The constructors
-		// of this class assume that the default character encoding and the default
-		// byte-buffer size are acceptable.
-		//
 		try (PrintWriter writer = new PrintWriter(new FileWriter(localDatabase, false))) {
 
 			for (String str : liste) {
@@ -187,40 +170,44 @@ public class PersisterImpl implements Persister {
 			}
 		}
 
+		catch (Exception e) {
+			logger.error("ERROR:\n Fehler beim Schreiben der Datei: ", e);
+		}
+
 		return true;
 	}
 
 	@Override
-	public List<Person> finde(String name, String vorname) throws Exception {
+	public List<Person> finde(String name, String vorname) {
+		// Finden einer Person anhand Name und Vorname (Achtung! koennen auch mehrere
+		// Personen sein!)
 
 		// Neues Array mit Personenliste
 		List<Person> liste = new ArrayList<>();
 
-		/// FileReader: Creates a new FileReader, given the File to read from.
-		// Buffered Reader:JAVA Docs: will buffer the input from the specified file.
-		/// Without buffering, each invocation of read() or readLine() could cause bytes
-		/// to be read from the file,
-		// converted into characters, and then returned, which can be very inefficient.
 		try (BufferedReader br = new BufferedReader(new FileReader(localDatabase))) {
 			String line = null;
 
 			// != ungleich null
 			while ((line = br.readLine()) != null) {
 
-				// String wird gesplittet in verschiedene Teile mit Delimiter dazwischen
+				// String wird anhand der Semikolon aufgeteilt / gesplittet
 				String[] parts = line.split(DELIMITER);
 
-				// && = Und, true, genau dann wenn alle Argumente true sind
+				// Wenn alle Argumente true sind wird Person in die Liste gepseichert
 				if ((parts[1].equals(name)) && (parts[2].equals(vorname))) {
 					liste.add(getAsPerson(line));
 				}
 			}
+		} catch (Exception e) {
+			logger.error("ERROR:\n Fehler beim finden der Personen: ", e);
 		}
 		return liste;
 	}
 
 	@Override
-	public Person finde(int personNummer) throws Exception {
+	public Person finde(int personNummer) {
+		// Finden einer Person anhand der Mitgliednummer
 		Person person = null;
 
 		try (BufferedReader br = new BufferedReader(new FileReader(localDatabase))) {
@@ -229,31 +216,30 @@ public class PersisterImpl implements Persister {
 			// != ungleich null
 			while ((line = br.readLine()) != null) {
 
-				// String wird gesplittet in verschiedene Teile mit Delimiter dazwischen
+				// String wird anhand der Semikolon aufgeteilt / gesplittet
 				String[] parts = line.split(DELIMITER);
 
-				// && = Und, true, genau dann wenn alle Argumente true sind
+				// Wenn alle Argumente true sind wird Person in die Liste gepseichert
 				if ((Integer.parseInt(parts[0]) == personNummer)) {
 					person = getAsPerson(line);
 				}
 			}
+		} catch (Exception e) {
+			logger.error("ERROR:\n Fehler beim finden der Person: ", e);
 		}
 		return person;
 	}
 
 	@Override
-	public List<Person> alle() throws Exception {
-
+	public List<Person> alle() {
+		//Finde alle Personen
 		// Neues Array mit Personenliste
 		List<Person> liste = new ArrayList<>();
 
-		if (localDatabase.exists()) {
+		try {
+			if (localDatabase.exists()) {
+			}
 
-			// FileReader: Creates a new FileReader, given the File to read from.
-			// Buffered Reader:JAVA Docs: will buffer the input from the specified file.
-			// Without buffering, each invocation of read() or readLine() could cause bytes
-			// to be read from the file,
-			// converted into characters, and then returned, which can be very inefficient.
 			try (BufferedReader br = new BufferedReader(new FileReader(localDatabase))) {
 				String line = null;
 
@@ -262,16 +248,18 @@ public class PersisterImpl implements Persister {
 					liste.add(getAsPerson(line));
 				}
 			}
+
+		} catch (Exception e) {
+			logger.error("ERROR:\n Fehler beim finden aller Personen: ", e);
 		}
 
 		return liste;
 	}
 
-	private Person getAsPerson(String line) throws ParseException {
-
+	private Person getAsPerson(String line) throws Exception {
+		//Aufteilen eines Strings in ein Personen Objekt
 		String[] parts = line.split(DELIMITER);
 
-		// Erstellung, Zueweisen der parts der verschiedenen Variablen
 		int personenNummer = Integer.parseInt(parts[0]);
 		String vorname = parts[1];
 		String name = parts[2];
