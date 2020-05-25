@@ -2,24 +2,17 @@ package prg.vereinverwaltung.persister.impl;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import prg.vereinverwaltung.domain.Adresse;
-import prg.vereinverwaltung.domain.Kontakt;
 import prg.vereinverwaltung.domain.Person;
 import prg.vereinverwaltung.persister.api.Persister;
 

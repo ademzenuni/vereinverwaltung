@@ -1,6 +1,6 @@
 package prg.vereinverwaltung.domain;
 import java.time.LocalDate;
-import java.util.Date;
+
 /**
  * Diese Klasse bildet eine Person ab.
  * 

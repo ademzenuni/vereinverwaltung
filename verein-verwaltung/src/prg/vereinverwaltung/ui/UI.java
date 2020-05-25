@@ -1,12 +1,8 @@
 package prg.vereinverwaltung.ui;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -14,8 +10,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import prg.vereinverwaltung.business.api.Verwaltung;
-import prg.vereinverwaltung.domain.Adresse;
-import prg.vereinverwaltung.domain.Kontakt;
 import prg.vereinverwaltung.domain.Person;
 
 /**
@@ -40,7 +34,6 @@ public class UI {
 	private List<Person> personListe = new ArrayList<>();
 	// Personenliste für Suche nach Namen und Vornamen
 	private List<Person> sucheNameVorname = new ArrayList<>();
-	private Person person;
 
 	/* Start-Menu */
 	private static String menu = MENU_1_0_0;
